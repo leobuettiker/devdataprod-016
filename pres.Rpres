@@ -65,7 +65,7 @@ isLeft <- isLeftRight & parteiparolen["SP",] == "ja"
 leftRightColNames <-names(isLeftRight)[which(isLeftRight)]
 lrColNames <- intersect(leftRightColNames, names(allYesVotesByKanton));
 votesMinusTotalVote <- sweep(data.matrix(allYesVotesByKanton[,lrColNames]),MARGIN=2,as.numeric(allYesVotesByKanton[1,lrColNames]),FUN="-")
-votesMinusTotalVoteLRadjusted <- sweep(votesMinusTotalVote,MARGIN=2, ifelse(isLeft[lrColNames],-1,1), FUN="*")
+votesMinusTotalVoteLRadjusted <- sweep(votesMinusTotalVote,MARGIN=2, ifelse(isLeft[lrColNames],1,-1), FUN="*")
 meanLeftness <- rowMeans(votesMinusTotalVoteLRadjusted)
 
 kantone <- rownames(allYesVotesByKanton)
@@ -81,7 +81,7 @@ votes <- data.frame(Kanton=kantone, LeftVotes=meanLeftness)
                                        height = 400,
                                        resolution="provinces",
                                        region="CH",
-                                       colorAxis="{colors: ['blue', 'red']}") #, minValue:0, maxValue:100
+                                       colorAxis="{colors: ['red', 'blue']}") #, minValue:0, maxValue:100
                         )
       print(G, "chart")
 ```

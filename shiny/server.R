@@ -10,7 +10,7 @@ isLeft <- isLeftRight & parteiparolen["SP",] == "ja"
 leftRightColNames <-names(isLeftRight)[which(isLeftRight)]
 lrColNames <- intersect(leftRightColNames, names(allYesVotesByKanton));
 votesMinusTotalVote <- sweep(data.matrix(allYesVotesByKanton[,lrColNames]),MARGIN=2,as.numeric(allYesVotesByKanton[1,lrColNames]),FUN="-")
-votesMinusTotalVoteLRadjusted <- sweep(votesMinusTotalVote,MARGIN=2, ifelse(isLeft[lrColNames],-1,1), FUN="*")
+votesMinusTotalVoteLRadjusted <- sweep(votesMinusTotalVote,MARGIN=2, ifelse(isLeft[lrColNames],1,-1), FUN="*")
 meanLeftness <- rowMeans(votesMinusTotalVoteLRadjusted)
 
 printGeoChart <- function(votes) {
@@ -21,7 +21,7 @@ printGeoChart <- function(votes) {
                                    height = 400,
                                    resolution="provinces",
                                    region="CH",
-                                   colorAxis="{colors: ['blue', 'red']}")
+                                   colorAxis="{colors: ['red', 'blue']}")
   )
   print(G, "chart")
 }

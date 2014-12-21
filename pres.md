@@ -1,7 +1,7 @@
 How left does Switzerland vote?
 ========================================================
 author: Leo Buettiker
-date: Sat Dec 20 17:27:20 2014
+date: Sun Dec 21 14:22:29 2014
 
 Project explanation
 ========================================================
@@ -20,14 +20,14 @@ Hypotesis
 People in french speaking cantons vote more left than german speaking.
 
 <!-- GeoChart generated in R 3.1.0 by googleVis 0.5.6 package -->
-<!-- Sat Dec 20 17:27:21 2014 -->
+<!-- Sun Dec 21 14:22:29 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataGeoChartID15acac74c5a () {
+function gvisDataGeoChartID2ac419c456f4 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -175,8 +175,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartGeoChartID15acac74c5a() {
-var data = gvisDataGeoChartID15acac74c5a();
+function drawChartGeoChartID2ac419c456f4() {
+var data = gvisDataGeoChartID2ac419c456f4();
 var options = {};
 options["width"] =    600;
 options["height"] =    400;
@@ -185,7 +185,7 @@ options["region"] = "CH";
 options["colors"] = ['blue', 'red', 'green'];
 
     var chart = new google.visualization.GeoChart(
-    document.getElementById('GeoChartID15acac74c5a')
+    document.getElementById('GeoChartID2ac419c456f4')
     );
     chart.draw(data,options);
     
@@ -209,9 +209,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartGeoChartID15acac74c5a);
+callbacks.push(drawChartGeoChartID2ac419c456f4);
 })();
-function displayChartGeoChartID15acac74c5a() {
+function displayChartGeoChartID2ac419c456f4() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -235,11 +235,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID15acac74c5a"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID2ac419c456f4"></script>
  
 <!-- divChart -->
   
-<div id="GeoChartID15acac74c5a" 
+<div id="GeoChartID2ac419c456f4" 
   style="width: 600; height: 400;">
 </div>
 
@@ -258,14 +258,14 @@ Conclusion
 - Bellow you can see the indication of "leftness" for all cantons
 
 <!-- GeoChart generated in R 3.1.0 by googleVis 0.5.6 package -->
-<!-- Sat Dec 20 17:27:21 2014 -->
+<!-- Sun Dec 21 14:22:29 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataGeoChartID15ac5b881125 () {
+function gvisDataGeoChartID2ac4999465f () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -275,107 +275,107 @@ var datajson =
 ],
 [
  "Zürich",
--0.4680412371 
+0.4680412371 
 ],
 [
  "Bern",
--0.8257731959 
+0.8257731959 
 ],
 [
  "Luzern",
-3.855670103 
+-3.855670103 
 ],
 [
  "Uri",
-5.430927835 
+-5.430927835 
 ],
 [
  "Schwyz",
-9.14742268 
+-9.14742268 
 ],
 [
  "Obwalden",
-7.010309278 
+-7.010309278 
 ],
 [
  "Nidwalden",
-7.626804124 
+-7.626804124 
 ],
 [
  "Glarus",
-5.741237113 
+-5.741237113 
 ],
 [
  "Zug",
-3.859793814 
+-3.859793814 
 ],
 [
  "Freiburg",
--2.562886598 
+2.562886598 
 ],
 [
  "Solothurn",
-2.416494845 
+-2.416494845 
 ],
 [
  "Basel-Stadt",
--6.365979381 
+6.365979381 
 ],
 [
  "Basel-Landschaft",
--0.418556701 
+0.418556701 
 ],
 [
  "Schaffhausen",
-2.073195876 
+-2.073195876 
 ],
 [
  "Appenzell Ausserrhoden",
-4.473195876 
+-4.473195876 
 ],
 [
  "Appenzell Innerrhoden",
-9.811340206 
+-9.811340206 
 ],
 [
  "St. Gallen",
-4.982474227 
+-4.982474227 
 ],
 [
  "Graubünden",
-1.691752577 
+-1.691752577 
 ],
 [
  "Aargau",
-4.82371134 
+-4.82371134 
 ],
 [
  "Thurgau",
-5.939175258 
+-5.939175258 
 ],
 [
  "Tessin",
--0.5783505155 
+0.5783505155 
 ],
 [
  "Waadt",
--6.734020619 
+6.734020619 
 ],
 [
  "Wallis",
-0.1103092784 
+-0.1103092784 
 ],
 [
  "Neuenburg",
--7.610309278 
+7.610309278 
 ],
 [
  "Genf",
--9.164948454 
+9.164948454 
 ],
 [
  "Jura",
--8.808247423 
+8.808247423 
 ] 
 ];
 data.addColumn('string','Kanton');
@@ -385,17 +385,17 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartGeoChartID15ac5b881125() {
-var data = gvisDataGeoChartID15ac5b881125();
+function drawChartGeoChartID2ac4999465f() {
+var data = gvisDataGeoChartID2ac4999465f();
 var options = {};
 options["width"] =    600;
 options["height"] =    400;
 options["resolution"] = "provinces";
 options["region"] = "CH";
-options["colorAxis"] = {colors: ['blue', 'red']};
+options["colorAxis"] = {colors: ['red', 'blue']};
 
     var chart = new google.visualization.GeoChart(
-    document.getElementById('GeoChartID15ac5b881125')
+    document.getElementById('GeoChartID2ac4999465f')
     );
     chart.draw(data,options);
     
@@ -419,9 +419,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartGeoChartID15ac5b881125);
+callbacks.push(drawChartGeoChartID2ac4999465f);
 })();
-function displayChartGeoChartID15ac5b881125() {
+function displayChartGeoChartID2ac4999465f() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -445,10 +445,10 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID15ac5b881125"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID2ac4999465f"></script>
  
 <!-- divChart -->
   
-<div id="GeoChartID15ac5b881125" 
+<div id="GeoChartID2ac4999465f" 
   style="width: 600; height: 400;">
 </div>
