@@ -1,17 +1,17 @@
 How left does Switzerland vote?
 ========================================================
 author: Leo Buettiker
-date: Sun Dec 21 14:22:29 2014
+date: Sun Dec 21 20:34:30 2014
 
 Project explanation
 ========================================================
 transition: rotate
 
-[Switzerland](http://en.wikipedia.org/wiki/Switzerland) is country in the middle of europe. It's seperated in 26 [cantons](http://en.wikipedia.org/wiki/Cantons_of_Switzerland). In [Switzerland](http://en.wikipedia.org/wiki/Switzerland) the [4 official languages](http://en.wikipedia.org/wiki/Switzerland#Languages) are German, French, Italien and Romansh.
+[Switzerland](http://en.wikipedia.org/wiki/Switzerland) is a country in the middle of europe. It's seperated into 26 [cantons](http://en.wikipedia.org/wiki/Cantons_of_Switzerland). In [Switzerland](http://en.wikipedia.org/wiki/Switzerland) the [4 official languages](http://en.wikipedia.org/wiki/Switzerland#Languages) are German, French, Italien and Romansh.
 
 - The two main languages are German and French
 - People are allowed to [vote on political topics](http://en.wikipedia.org/wiki/Switzerland#Direct_democracy) on a regular basis
-- Most votes can be categorized into a left or right wing topics
+- Most votes can be categorized into a left or right wing topic
 - The big left wing party is the [Social Democratic Party of Switzerland (SP)](http://en.wikipedia.org/wiki/Social_Democratic_Party_of_Switzerland), the big right wing party is the [Swiss People's Party (SVP)](http://en.wikipedia.org/wiki/Swiss_People%27s_Party)
 
 
@@ -20,14 +20,14 @@ Hypotesis
 People in french speaking cantons vote more left than german speaking.
 
 <!-- GeoChart generated in R 3.1.0 by googleVis 0.5.6 package -->
-<!-- Sun Dec 21 14:22:29 2014 -->
+<!-- Sun Dec 21 20:34:31 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataGeoChartID2ac419c456f4 () {
+function gvisDataGeoChartID276c4c642606 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -175,8 +175,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartGeoChartID2ac419c456f4() {
-var data = gvisDataGeoChartID2ac419c456f4();
+function drawChartGeoChartID276c4c642606() {
+var data = gvisDataGeoChartID276c4c642606();
 var options = {};
 options["width"] =    600;
 options["height"] =    400;
@@ -185,7 +185,7 @@ options["region"] = "CH";
 options["colors"] = ['blue', 'red', 'green'];
 
     var chart = new google.visualization.GeoChart(
-    document.getElementById('GeoChartID2ac419c456f4')
+    document.getElementById('GeoChartID276c4c642606')
     );
     chart.draw(data,options);
     
@@ -209,9 +209,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartGeoChartID2ac419c456f4);
+callbacks.push(drawChartGeoChartID276c4c642606);
 })();
-function displayChartGeoChartID2ac419c456f4() {
+function displayChartGeoChartID276c4c642606() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -235,11 +235,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID2ac419c456f4"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID276c4c642606"></script>
  
 <!-- divChart -->
   
-<div id="GeoChartID2ac419c456f4" 
+<div id="GeoChartID276c4c642606" 
   style="width: 600; height: 400;">
 </div>
 
@@ -254,18 +254,18 @@ Methodology
 Conclusion
 =========================================================
 - To no surprise the thesis holds mostly true
-   - except for Zurich and both Basel which vote also left
+   - except for Zurich and both Basels which vote also left
 - Bellow you can see the indication of "leftness" for all cantons
 
 <!-- GeoChart generated in R 3.1.0 by googleVis 0.5.6 package -->
-<!-- Sun Dec 21 14:22:29 2014 -->
+<!-- Sun Dec 21 20:34:31 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataGeoChartID2ac4999465f () {
+function gvisDataGeoChartID276c762158c5 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -385,8 +385,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartGeoChartID2ac4999465f() {
-var data = gvisDataGeoChartID2ac4999465f();
+function drawChartGeoChartID276c762158c5() {
+var data = gvisDataGeoChartID276c762158c5();
 var options = {};
 options["width"] =    600;
 options["height"] =    400;
@@ -395,7 +395,7 @@ options["region"] = "CH";
 options["colorAxis"] = {colors: ['red', 'blue']};
 
     var chart = new google.visualization.GeoChart(
-    document.getElementById('GeoChartID2ac4999465f')
+    document.getElementById('GeoChartID276c762158c5')
     );
     chart.draw(data,options);
     
@@ -419,9 +419,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartGeoChartID2ac4999465f);
+callbacks.push(drawChartGeoChartID276c762158c5);
 })();
-function displayChartGeoChartID2ac4999465f() {
+function displayChartGeoChartID276c762158c5() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -445,10 +445,10 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID2ac4999465f"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID276c762158c5"></script>
  
 <!-- divChart -->
   
-<div id="GeoChartID2ac4999465f" 
+<div id="GeoChartID276c762158c5" 
   style="width: 600; height: 400;">
 </div>

@@ -7,11 +7,11 @@ Project explanation
 ========================================================
 transition: rotate
 
-[Switzerland](http://en.wikipedia.org/wiki/Switzerland) is country in the middle of europe. It's seperated in 26 [cantons](http://en.wikipedia.org/wiki/Cantons_of_Switzerland). In [Switzerland](http://en.wikipedia.org/wiki/Switzerland) the [4 official languages](http://en.wikipedia.org/wiki/Switzerland#Languages) are German, French, Italien and Romansh.
+[Switzerland](http://en.wikipedia.org/wiki/Switzerland) is a country in the middle of europe. It's seperated into 26 [cantons](http://en.wikipedia.org/wiki/Cantons_of_Switzerland). In [Switzerland](http://en.wikipedia.org/wiki/Switzerland) the [4 official languages](http://en.wikipedia.org/wiki/Switzerland#Languages) are German, French, Italien and Romansh.
 
 - The two main languages are German and French
 - People are allowed to [vote on political topics](http://en.wikipedia.org/wiki/Switzerland#Direct_democracy) on a regular basis
-- Most votes can be categorized into a left or right wing topics
+- Most votes can be categorized into a left or right wing topic
 - The big left wing party is the [Social Democratic Party of Switzerland (SP)](http://en.wikipedia.org/wiki/Social_Democratic_Party_of_Switzerland), the big right wing party is the [Swiss People's Party (SVP)](http://en.wikipedia.org/wiki/Swiss_People%27s_Party)
 
 
@@ -55,7 +55,7 @@ Methodology
 Conclusion
 =========================================================
 - To no surprise the thesis holds mostly true
-   - except for Zurich and both Basel which vote also left
+   - except for Zurich and both Basels which vote also left
 - Bellow you can see the indication of "leftness" for all cantons
 
 ```{r, echo=FALSE, results='asis'}
