@@ -27,23 +27,13 @@ cleanedSheets <- lapply(votes, function(x)    {
   })
 allVotes <- do.call("rbind",cleanedSheets)
 Encoding(allVotes[,3])<- "UTF-8"
-allVotes <- allVotes[order(as.numeric(allVotes[,1]), decreasing=T),]
-allVotes[,3]
 
 headers <- trim(sub("- ", "",paste(votes[[1]][4,], votes[[1]][5,])))
 Encoding(headers) <- "UTF-8"
 correspondingVotes <- allVotes[which(sub(" .*","", allVotes[,1]) %in% colnames(allYesVotesByKanton)),]
 colnames(correspondingVotes) <- headers
 rownames(correspondingVotes) <- correspondingVotes[,1]
-
-rownames(allYesVotesByKanton)
-
-boxplot(as.numeric(allYesVotesByKanton[,"563"]))
-germanIndex <- c(2:10,12:21,24)
-frenchIndex <- c(11,23,25:27)
-germanKantone <- rownames(allYesVotesByKanton)[2:21]
-frenchKantone <- rownames(allYesVotesByKanton)[c(23,25:27)]
-boxplot(list(as.numeric(allYesVotesByKanton[,"563"][germanIndex]), as.numeric(allYesVotesByKanton[,"563"][frenchIndex])))
+correspondingVotes <- correspondingVotes[order(as.Date(correspondingVotes[,"Datum"], "%d.%m.%Y"), decreasing=T),];
 
 #download.file("http://www.bfs.admin.ch/bfs/portal/de/index/themen/17/22/lexi.Document.21843.xls", "parteiparolen.xls", mode="wb")
 wb <- loadWorkbook("./parteiparolen.xls")
@@ -89,4 +79,3 @@ parteiparolen[parteiparolen==3] <- "freigabe"
 parteiparolen[!(parteiparolen %in% c("ja","nein","freigabe"))] <- NA
 
 save(parteiparolen, correspondingVotes, allYesVotesByKanton, file="yesVotes.Rdata")
-

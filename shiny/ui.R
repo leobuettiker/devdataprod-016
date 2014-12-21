@@ -22,7 +22,7 @@ shinyUI(pageWithSidebar(
     htmlOutput('map'),
     h2("Yes votes by language region"),
     plotOutput('boxplot'),
-    p("A yes votes does not indicate if the ballot was a left or right wing topic."),
+    p("A yes votes does not indicate if the ballot was a left or right wing topic. The red line is how much yes votes in percentage are given overall."),
     h2("Additional Information"),
     tableOutput('table')
   )
